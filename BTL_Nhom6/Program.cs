@@ -1,5 +1,11 @@
-var builder = WebApplication.CreateBuilder(args);
+using BTL_Nhom6.Data;
+using Microsoft.EntityFrameworkCore;
 
+var builder = WebApplication.CreateBuilder(args);
+//
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlite(connectionString));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
