@@ -3,6 +3,7 @@ using System;
 using BTL_Nhom6.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BTL_Nhom6.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230518153248_Create_Table_Hoadon")]
+    partial class Create_Table_Hoadon
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.5");
@@ -128,37 +131,6 @@ namespace BTL_Nhom6.Migrations
                     b.ToTable("Nhanvien");
                 });
 
-            modelBuilder.Entity("BTL_Nhom6.Models.Nhaphang", b =>
-                {
-                    b.Property<string>("IDNH")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("NgaynhapSP")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("SoluongSP")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("TenNCC")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("TenNV")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("TenSP")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("IDNH");
-
-                    b.HasIndex("TenNCC");
-
-                    b.HasIndex("TenNV");
-
-                    b.HasIndex("TenSP");
-
-                    b.ToTable("Nhaphang");
-                });
-
             modelBuilder.Entity("BTL_Nhom6.Models.Sanpham", b =>
                 {
                     b.Property<string>("MaSP")
@@ -186,27 +158,6 @@ namespace BTL_Nhom6.Migrations
                         .HasForeignKey("TenSP");
 
                     b.Navigation("Khachhang");
-
-                    b.Navigation("Sanpham");
-                });
-
-            modelBuilder.Entity("BTL_Nhom6.Models.Nhaphang", b =>
-                {
-                    b.HasOne("BTL_Nhom6.Models.Nhacungcap", "Nhacungcap")
-                        .WithMany()
-                        .HasForeignKey("TenNCC");
-
-                    b.HasOne("BTL_Nhom6.Models.Nhanvien", "Nhanvien")
-                        .WithMany()
-                        .HasForeignKey("TenNV");
-
-                    b.HasOne("BTL_Nhom6.Models.Sanpham", "Sanpham")
-                        .WithMany()
-                        .HasForeignKey("TenSP");
-
-                    b.Navigation("Nhacungcap");
-
-                    b.Navigation("Nhanvien");
 
                     b.Navigation("Sanpham");
                 });
