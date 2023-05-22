@@ -517,7 +517,6 @@ C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\ru\Microsoft.C
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
@@ -541,8 +540,6 @@ C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win-a
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\obj\Debug\net7.0\staticwebassets\msbuild.BTL_Nhom6.Microsoft.AspNetCore.StaticWebAssets.props
@@ -558,3 +555,9 @@ C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\obj\Debug\net7.0\scopedcss\proj
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\obj\Debug\net7.0\BTL_Nhom6.csproj.CopyComplete
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\obj\Debug\net7.0\BTL_Nhom6.genruntimeconfig.cache
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\obj\Debug\net7.0\ref\BTL_Nhom6.dll
+C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\EPPlus.dll
+C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\EPPlus.Interfaces.dll
+C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\EPPlus.System.Drawing.dll
+C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll

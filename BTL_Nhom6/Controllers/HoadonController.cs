@@ -22,8 +22,8 @@ namespace BTL_Nhom6.Controllers
         // GET: Hoadon
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Hoadon.Include(h => h.Khachhang).Include(h => h.Sanpham);
-            return View(await applicationDbContext.ToListAsync());
+            var applicationDbcontext = _context.Hoadon.Include(h => h.Khachhang).Include(h => h.Sanpham);
+            return View(await applicationDbcontext.ToListAsync());
         }
 
         // GET: Hoadon/Details/5
@@ -154,7 +154,7 @@ namespace BTL_Nhom6.Controllers
         {
             if (_context.Hoadon == null)
             {
-                return Problem("Entity set 'ApplicationDbContext.Hoadon'  is null.");
+                return Problem("Entity set 'ApplicationDbcontext.Hoadon'  is null.");
             }
             var hoadon = await _context.Hoadon.FindAsync(id);
             if (hoadon != null)

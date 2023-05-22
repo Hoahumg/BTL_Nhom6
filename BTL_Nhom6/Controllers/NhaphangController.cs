@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BTL_Nhom6.Data;
 using BTL_Nhom6.Models;
+using BTL_Nhom6.Models.Process;
 
 namespace BTL_Nhom6.Controllers
 {
@@ -22,8 +23,8 @@ namespace BTL_Nhom6.Controllers
         // GET: Nhaphang
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Nhaphang.Include(n => n.Nhacungcap).Include(n => n.Nhanvien).Include(n => n.Sanpham);
-            return View(await applicationDbContext.ToListAsync());
+            var applicationDbcontext = _context.Nhaphang.Include(n => n.Nhacungcap).Include(n => n.Nhanvien).Include(n => n.Sanpham);
+            return View(await applicationDbcontext.ToListAsync());
         }
 
         // GET: Nhaphang/Details/5
@@ -160,7 +161,7 @@ namespace BTL_Nhom6.Controllers
         {
             if (_context.Nhaphang == null)
             {
-                return Problem("Entity set 'ApplicationDbContext.Nhaphang'  is null.");
+                return Problem("Entity set 'ApplicationDbcontext.Nhaphang'  is null.");
             }
             var nhaphang = await _context.Nhaphang.FindAsync(id);
             if (nhaphang != null)
