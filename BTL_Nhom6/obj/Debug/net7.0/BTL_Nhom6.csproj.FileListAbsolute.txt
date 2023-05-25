@@ -221,9 +221,6 @@ C:\Users\ACER\Desktop\BTL-nhom6\BTL_Nhom6\bin\Debug\net7.0\ru\Microsoft.CodeAnal
 C:\Users\ACER\Desktop\BTL-nhom6\BTL_Nhom6\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\ACER\Desktop\BTL-nhom6\BTL_Nhom6\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\ACER\Desktop\BTL-nhom6\BTL_Nhom6\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-C:\Users\ACER\Desktop\BTL-nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\ACER\Desktop\BTL-nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Users\ACER\Desktop\BTL-nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\ACER\Desktop\BTL-nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ACER\Desktop\BTL-nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\ACER\Desktop\BTL-nhom6\BTL_Nhom6\obj\Debug\net7.0\BTL_Nhom6.csproj.AssemblyReference.cache
@@ -561,3 +558,9 @@ C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\EPPlus.System.
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\HP\Documents\GitHub\BTL_Nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+C:\Users\ACER\Desktop\BTL-nhom6\BTL_Nhom6\bin\Debug\net7.0\EPPlus.dll
+C:\Users\ACER\Desktop\BTL-nhom6\BTL_Nhom6\bin\Debug\net7.0\EPPlus.Interfaces.dll
+C:\Users\ACER\Desktop\BTL-nhom6\BTL_Nhom6\bin\Debug\net7.0\EPPlus.System.Drawing.dll
+C:\Users\ACER\Desktop\BTL-nhom6\BTL_Nhom6\bin\Debug\net7.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\ACER\Desktop\BTL-nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ACER\Desktop\BTL-nhom6\BTL_Nhom6\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll

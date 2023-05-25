@@ -7,12 +7,14 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BTL_Nhom6.Data;
 using BTL_Nhom6.Models;
+using BTL_Nhom6.Models.Process;
 
 namespace BTL_Nhom6.Controllers
 {
     public class SanphamController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private StringProcess strPro = new StringProcess();
 
         public SanphamController(ApplicationDbContext context)
         {
@@ -20,11 +22,22 @@ namespace BTL_Nhom6.Controllers
         }
 
         // GET: Sanpham
-        public async Task<IActionResult> Index()
+        // public async Task<IActionResult> Index()
+        // {
+        //       return _context.Sanpham != null ? 
+        //                   View(await _context.Sanpham.ToListAsync()) :
+        //                   Problem("Entity set 'ApplicationDbcontext.Sanpham'  is null.");
+        // }
+        public async Task<IActionResult> Index(string searchString)
         {
-              return _context.Sanpham != null ? 
-                          View(await _context.Sanpham.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Sanpham'  is null.");
+              var Sanpham = from m in _context.Sanpham
+                select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                Sanpham = Sanpham.Where(s => s.TenSP!.Contains(searchString));
+                }
+            return View(await Sanpham.ToListAsync());
         }
 
         // GET: Sanpham/Details/5
@@ -48,6 +61,14 @@ namespace BTL_Nhom6.Controllers
         // GET: Sanpham/Create
         public IActionResult Create()
         {
+            var IDdautien = "SP01";
+            var countAnh = _context.Sanpham.Count();
+            if (countAnh > 0)
+            {
+                var MaSP = _context.Sanpham.OrderByDescending(m => m.MaSP).First().MaSP;
+                IDdautien = strPro.AutoGenerateCode(MaSP);
+            }
+            ViewBag.newID = IDdautien;
             return View();
         }
 

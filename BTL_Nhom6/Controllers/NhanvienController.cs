@@ -7,14 +7,17 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BTL_Nhom6.Data;
 using BTL_Nhom6.Models;
+using BTL_Nhom6.Models.Process;
 
 namespace BTL_Nhom6.Controllers
 {
     public class NhanvienController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private ExcelProcess _excelProcess = new ExcelProcess();
+        private StringProcess strPro = new StringProcess();
 
-        public NhanvienController(ApplicationDbContext context)
+            public NhanvienController(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -48,6 +51,14 @@ namespace BTL_Nhom6.Controllers
         // GET: Nhanvien/Create
         public IActionResult Create()
         {
+            var IDdautien = "NV01";
+            var countAnh = _context.Nhanvien.Count();
+            if (countAnh > 0)
+            {
+                var MaNV = _context.Nhanvien.OrderByDescending(m => m.MaNV).First().MaNV;
+                IDdautien = strPro.AutoGenerateCode(MaNV);
+            }
+            ViewBag.newID = IDdautien;
             return View();
         }
 
@@ -158,6 +169,51 @@ namespace BTL_Nhom6.Controllers
         private bool NhanvienExists(string id)
         {
           return (_context.Nhanvien?.Any(e => e.MaNV == id)).GetValueOrDefault();
+        }
+        public async Task<IActionResult> Upload()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Upload(IFormFile file)
+        {
+            if (file != null)
+            {
+                string fileExtension = Path.GetExtension(file.FileName);
+                if (fileExtension != ".xls" && fileExtension != ".xlsx")
+                {
+                    ModelState.AddModelError("", "Please choose excel file to upload!");
+                }
+                else
+                {
+                    var FileName = DateTime.Now.ToShortTimeString() + fileExtension;
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory() + "/Uploads/Excels", FileName);
+                    var fileLocation = new FileInfo(filePath).ToString();
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        //save file to sever
+                        await file.CopyToAsync(stream);
+                        var dt = _excelProcess.ExcelToDataTable(fileLocation);
+                        for (int i = 0; i < dt.Rows.Count; i++)
+                        {
+                            var dakh = new Nhanvien();
+
+                            dakh.MaNV = dt.Rows[i][0].ToString();
+                            dakh.TenNV = dt.Rows[i][1].ToString();
+                            dakh.NgaysinhNV = Convert.ToDateTime(dt.Rows[i][2].ToString());
+                            dakh.SdtNV = dt.Rows[i][3].ToString();
+                            dakh.DiachiNV = dt.Rows[i][4].ToString();
+                            dakh.EmailNV = dt.Rows[i][5].ToString();
+
+                            _context.Nhanvien.Add(dakh);
+                        }
+                        await _context.SaveChangesAsync();
+                        return RedirectToAction(nameof(Index));
+                    }
+                }
+            }
+            return View();
         }
     }
 }
