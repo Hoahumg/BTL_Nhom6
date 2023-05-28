@@ -10498,19 +10498,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\ACER\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Documents\\GitHub\\BTL_Nhom6\\BTL_Nhom6\\BTL_Nhom6.csproj",
+      "projectUniqueName": "C:\\Users\\ACER\\Desktop\\BTL-nhom6\\BTL_Nhom6\\BTL_Nhom6.csproj",
       "projectName": "BTL_Nhom6",
-      "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\BTL_Nhom6\\BTL_Nhom6\\BTL_Nhom6.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Documents\\GitHub\\BTL_Nhom6\\BTL_Nhom6\\obj\\",
+      "projectPath": "C:\\Users\\ACER\\Desktop\\BTL-nhom6\\BTL_Nhom6\\BTL_Nhom6.csproj",
+      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ACER\\Desktop\\BTL-nhom6\\BTL_Nhom6\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10580,7 +10580,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
