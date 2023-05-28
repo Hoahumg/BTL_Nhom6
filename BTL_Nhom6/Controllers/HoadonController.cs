@@ -47,7 +47,7 @@ namespace BTL_Nhom6.Controllers
         }
 
         // GET: Hoadon/Create
-        public IActionResult Create()
+         public IActionResult Create()
         {
             ViewData["TenKH"] = new SelectList(_context.Khachhang, "MaKH", "MaKH");
             ViewData["TenSP"] = new SelectList(_context.Sanpham, "MaSP", "MaSP");
@@ -71,7 +71,6 @@ namespace BTL_Nhom6.Controllers
             ViewData["TenSP"] = new SelectList(_context.Sanpham, "MaSP", "MaSP", hoadon.TenSP);
             return View(hoadon);
         }
-
         // GET: Hoadon/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
@@ -86,7 +85,7 @@ namespace BTL_Nhom6.Controllers
                 return NotFound();
             }
             ViewData["TenKH"] = new SelectList(_context.Khachhang, "MaKH", "MaKH", hoadon.TenKH);
-            ViewData["TenSP"] = new SelectList(_context.Sanpham, "MaSP", "MaSP", hoadon.TenSP);
+            ViewData["MaSP"] = new SelectList(_context.Sanpham, "MaSP", "MaSP", hoadon.TenSP);
             return View(hoadon);
         }
 

@@ -4,39 +4,39 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Tạo mới hóa đơn</h1>
 
-<h4>Hoadon</h4>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="MaHD" class="control-label"></label>
+                <label asp-for="MaHD" class="control-label">Mã hóa đơn</label>
                 <input asp-for="MaHD" class="form-control" />
                 <span asp-validation-for="MaHD" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TenKH" class="control-label"></label>
+                <label asp-for="TenKH" class="control-label">Mã khách hàng</label>
                 <select asp-for="TenKH" class ="form-control" asp-items="ViewBag.TenKH"></select>
             </div>
             <div class="form-group">
-                <label asp-for="TenSP" class="control-label"></label>
+                <label asp-for="TenSP" class="control-label">Mã sản phẩm</label>
                 <select asp-for="TenSP" class ="form-control" asp-items="ViewBag.TenSP"></select>
             </div>
             <div class="form-group">
-                <label asp-for="SoluongHD" class="control-label"></label>
+                <label asp-for="SoluongHD" class="control-label">Số lượng</label>
                 <input asp-for="SoluongHD" class="form-control" />
                 <span asp-validation-for="SoluongHD" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Ngayban" class="control-label"></label>
+                <label asp-for="Ngayban" class="control-label">Ngày bán</label>
                 <input asp-for="Ngayban" class="form-control" />
                 <span asp-validation-for="Ngayban" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Tạo" class="btn btn-primary" />
             </div>
         </form>
     </div>

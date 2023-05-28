@@ -14,4 +14,5 @@ public class Nhacungcap {
     [Display(Name = "Email")]
     [EmailAddress(ErrorMessage = "Email.?")]
     public string? EmailNCC { get; set; }
+    
 }

@@ -5,7 +5,7 @@ public class Dangnhap
 {
     [Key]
     public int UserID { get; set; }
-
+    [Display(Name = "Tài khoản ")]
     [Required(ErrorMessage = "Hãy nhập tài khoán của bạn ")]
     public string userName { get; set; }
 
